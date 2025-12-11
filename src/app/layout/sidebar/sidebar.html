@@ -1,0 +1,14 @@
+
+<aside class="app-sidebar border-end bg-light">
+  <div class="p-3 border-bottom">
+    <strong>Menú</strong>
+  </div>
+
+  <nav class="nav flex-column">
+    <!-- Enlaces (funcionarán cuando definamos rutas) -->
+    <a class="nav-link" routerLink="/dashboard" routerLinkActive="active"
+       [routerLinkActiveOptions]="{ exact: true }">📊 Dashboard</a>
+    <a class="nav-link" routerLink="/reportes" routerLinkActive="active">📈 Reportes</a>
+    <a class="nav-link" routerLink="/config" routerLinkActive="active">⚙️ Configuración</a>
+  </nav>
+</aside>

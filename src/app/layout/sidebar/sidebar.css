@@ -1,0 +1,28 @@
+
+/* Lateral fijo */
+.app-sidebar {
+  width: 260px;
+  min-height: 100vh;          /* ocupa altura completa */
+  position: sticky;
+  top: 0;
+}
+
+/* Links */
+.app-sidebar .nav-link {
+  color: #333;
+  padding: .5rem 1rem;
+  border-radius: 0;
+}
+.app-sidebar .nav-link.active {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+/* En móviles: opción simple, que se vaya arriba (puedes hacer offcanvas luego) */
+@media (max-width: 768px) {
+  .app-sidebar {
+    width: 100%;
+    min-height: auto;
+    position: static;
+  }
+}

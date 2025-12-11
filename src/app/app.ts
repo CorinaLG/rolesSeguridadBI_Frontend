@@ -1,15 +1,13 @@
 
-// src/app/app.ts
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './layout/navbar/navbar';
+import { SidebarComponent } from './layout/sidebar/sidebar'; // <-- ajusta a tu ruta real
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent],
+  imports: [RouterOutlet, SidebarComponent],
   templateUrl: './app.html',
-  styleUrls: ['./app.css'] // opcional
+  styleUrls: ['./app.css']
 })
 export class AppComponent {}
-
