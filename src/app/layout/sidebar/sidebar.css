@@ -1,28 +1,45 @@
-
-/* Lateral fijo */
-.app-sidebar {
-  width: 260px;
-  min-height: 100vh;          /* ocupa altura completa */
-  position: sticky;
+/* Tamaño y estilo del sidebar */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
   top: 0;
+  background: #577a9b; /* color oscuro elegante */
+  padding-top: 10px;
+  box-shadow: #577a9b;
+}
+
+/* Logo */
+.sidebar-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-title {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* Links */
-.app-sidebar .nav-link {
-  color: #333;
-  padding: .5rem 1rem;
-  border-radius: 0;
-}
-.app-sidebar .nav-link.active {
-  background-color: #0d6efd;
-  color: #fff;
+.sidebar .nav-link {
+  padding: 12px 20px;
+  font-size: 16px;
+  transition: 0.3s;
 }
 
-/* En móviles: opción simple, que se vaya arriba (puedes hacer offcanvas luego) */
-@media (max-width: 768px) {
-  .app-sidebar {
-    width: 100%;
-    min-height: auto;
-    position: static;
-  }
+.sidebar .nav-link:hover {
+  background:#577a9b;
+  border-left: 4px solid #0d6efd;
+}
+
+.sidebar .active {
+  background: #577a9b;
+  border-left: 4px solid #0d6efd;
 }
