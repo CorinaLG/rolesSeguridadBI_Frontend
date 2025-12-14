@@ -1,0 +1,28 @@
+
+/* Ocupa el alto completo de la ventana */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Contenedor principal en dos columnas */
+.layout {
+  display: flex;
+  min-height: 100vh; /* alto de la ventana */
+}
+
+/* Columna del sidebar */
+.sidebar {
+  width: 240px;       /* ajusta a tu diseño */
+  flex: 0 0 240px;    /* ancho fijo */
+  background: #29446d; /* color de fondo del sidebar */
+  color: #fff;
+}
+
+/* Columna del contenido */
+.content {
+  flex: 1;            /* ocupa el resto del ancho */
+  padding: 16px;      /* espacio interno */
+  overflow: auto;     /* scroll si el contenido es largo */
+  background: #fff;
+}

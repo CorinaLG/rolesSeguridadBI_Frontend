@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListUserComponent } from './list-user';
+import { CreateRolComponent } from './create-rol';
 
-describe('ListUser', () => {
-  let component: ListUserComponent;
-  let fixture: ComponentFixture<ListUserComponent>;
+describe('CreateRol', () => {
+  let component: CreateRolComponent;
+  let fixture: ComponentFixture<CreateRolComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ListUserComponent]
+      imports: [CreateRolComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ListUserComponent);
+    fixture = TestBed.createComponent(CreateRolComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

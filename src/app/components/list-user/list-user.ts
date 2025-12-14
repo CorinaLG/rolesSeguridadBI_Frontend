@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-list-user',
   standalone: true,
   templateUrl: './list-user.html',
-  styleUrl: './list-user.css',
+  styleUrls: ['./list-user.css'],
 })
-export class ListUserComponent {
-
-}
+export class ListUserComponent {}
