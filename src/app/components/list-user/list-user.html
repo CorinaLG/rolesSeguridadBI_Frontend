@@ -1,3 +1,25 @@
 
-<h1>Listado de usuarios</h1>
 
+<h1>Usuarios</h1>
+
+<div *ngIf="loading">Cargando...</div>
+<div *ngIf="error" class="error">{{ error }}</div>
+
+<table *ngIf="!loading && !error">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Cuenta</th>
+      <th>Cargo</th>
+      <th>Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let u of usuarios">
+      <td>{{ u.id_usuario }}</td>
+      <td>{{ u.cuenta }}</td>
+      <td>{{ u.cargo }}</td>
+      <td>{{ u.estado_usuario }}</td>
+    </tr>
+  </tbody>
+</table>
